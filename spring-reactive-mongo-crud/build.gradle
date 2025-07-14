@@ -32,6 +32,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	//	Flapdoodle Embedded MongoDB » 4.20.1
+	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.20.1")
 }
 
 tasks.named('test') {
